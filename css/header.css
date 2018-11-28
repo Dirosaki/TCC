@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Black Han Sans', sans-serif;
+    overflow: hidden;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+}
+
+header>a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2vw;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 0;
+    color: black;
+    outline: none;
+}
+
+header>a>img{
+    height: 90%;
+    margin-right: 0.8vw;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 1vw;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+nav a:hover{
+    color: rgb(0, 123, 255);
+}
+
+.button{
+    margin: 0 2vw;
+    margin-left: 1vw;
+    padding: 8px 14px;
+    box-sizing: border-box;
+    background-color: #00AAF4;
+    border-radius: 5px;
+    color: white;
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: rgb(0, 123, 255);
+    color: white;
+}
+
+.burguer{
+    display: none;
+}
+
+@media screen and (max-width: 750px){
+    nav{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 50px;
+        height: 70vh;
+        width: 80vw;
+        background-color: whitesmoke;
+        right: 0;
+        transition: 0.8s;
+        transform: translateX(100%);
+        z-index: 10;
+    }
+
+    nav a{
+        width: 50%;
+        text-align: center;
+        margin: 0 2vw;
+        padding: 10px 14px;
+        box-sizing: border-box;
+        color: black;
+        border-bottom: 1px solid #00AAF4;
+    }
+
+    nav a:hover{
+        color: black;
+    }
+
+    .button:hover{
+        background-color: #00AAF4;
+    }
+
+    .navClick{
+        transform: translateX(0);
+
+    }
+    .burguer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 50px;
+        width: 50px;
+        margin-right: 2vw;
+    }
+
+    .barra{
+        height: 1px;
+        width: 25px;
+        background-color: black;
+        transition: .5s;
+    }
+
+    .barra:nth-child(2){
+        margin: 7px;
+    }
+
+    .barrinha{
+        position: absolute;
+        transform: rotate(135deg);
+    }
+
+    .barrinha:nth-child(2){
+        margin: 0;
+        transform: rotate(-135deg);
+    }
+
+}
+

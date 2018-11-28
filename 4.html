@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/suporte.css">
+    <link rel="stylesheet" href="css/consultar.css">
+    <link rel="stylesheet" href="css/abrir.css">
+    <script defer src="js/header.js"></script>
+    <script defer src="js/suporte.js"></script>
+    <title>SOFTECH - Suporte</title>
+</head>
+<body>
+    <header>
+        <a href="1.html"><img src="img/logo.png" alt="">SOFTECH</a>
+        <nav>
+            <a href="1.html">Inicío</a>
+            <a href="2.html">Clientes</a>
+            <a href="3.html">Sobre</a>
+            <a href="4.html">Suporte</a>
+            <a href="5.html">Contato</a>
+            <a class="button" href="6.html">Login</a>
+        </nav>
+        <div class="burguer">
+            <div class="barra"></div>
+            <div class="barra"></div>
+            <div class="barra"></div>
+        </div>
+    </header>
+
+    <section>
+        <aside class="aside1">
+            <div class="title"> 
+                <h5>Chamados</h5>
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <div class="options">
+                <h5>Consultar chamados <i class="fas fa-circle"></i></h5>
+                <h5>Abrir chamados <i class="fas fa-circle"></i></h5>
+                <h5>Alterar chamados <i class="fas fa-circle"></i></h5>
+                <h5>Ajuda <i class="fas fa-circle"></i></h5>
+            </div>
+        </aside>
+
+        <div class="tela">
+            <div id="consultar" class="consultar">
+                <div class="table">
+                        <h4>Consultar Chamados</h4>
+                    <div class="select">
+                        <h5>Abertos</h5>
+                        <h5>Em andamento</h5>
+                        <h5>Finalizados</h5>
+                    </div>
+                    <div class="abertos">
+                        <div class="info">
+                            <h5>ID_CHAMADO</h5>
+                            <h5>Nome Cliente</h5>
+                            <h5>Descrição</h5>
+                            <h5>Técnico</h5>
+                            <h5>Data da Solicitação</h5>
+                        </div>
+                        <div class="dados">
+                            <label>1</label>
+                            <label>Ana</label>
+                            <label>Troca de HD</label>
+                            <label>Valmir</label>
+                            <label>20/04/2018</label>
+                        </div>
+                        <div class="dados">
+                            <label>2</label>
+                            <label>Claudio</label>
+                            <label>Problema na impressora</label>
+                            <label>José</label>
+                            <label>15/04/2018</label>
+                        </div>
+                        <div class="dados">
+                            <label>3</label>
+                            <label>Carol</label>
+                            <label>Sem conexão com internet</label>
+                            <label>Rebeca</label>
+                            <label>01/04/2018</label>
+                        </div>
+                        <div class="dados">
+                            <label>4</label>
+                            <label>Pedro</label>
+                            <label>Problema com login</label>
+                            <label>Hemma</label>
+                            <label>19/04/2018</label>
+                        </div>
+                        <div class="dados">
+                            <label>5</label>
+                            <label>Felipe</label>
+                            <label>Troca de computador</label>
+                            <label>Roberta</label>
+                            <label>05/04/2018</label>
+                        </div>
+                        <div class="dados">
+                            <label>6</label>
+                            <label>Felipe</label>
+                            <label>Troca de computador</label>
+                            <label>Roberta</label>
+                            <label>05/04/2018</label>
+                        </div>
+                        <div class="dados">
+                            <label>7</label>
+                            <label>Felipe</label>
+                            <label>Troca de computador</label>
+                            <label>Roberta</label>
+                            <label>05/04/2018</label>
+                        </div>
+                        <div class="dados">
+                            <label>8</label>
+                            <label>Felipe</label>
+                            <label>Troca de computador</label>
+                            <label>Roberta</label>
+                            <label>05/04/2018</label>
+                        </div>
+                        <div class="dados">
+                            <label>9</label>
+                            <label>Felipe</label>
+                            <label>Troca de computador</label>
+                            <label>Roberta</label>
+                            <label>05/04/2018</label>
+                        </div>
+                        <div class="dados">
+                            <label>10</label>
+                            <label>Felipe</label>
+                            <label>Troca de computador</label>
+                            <label>Roberta</label>
+                            <label>05/04/2018</label>
+                        </div>
+                    </div>
+                    <i class="fas fa-arrow-alt-circle-down"></i>
+                    <i class="fas fa-arrow-alt-circle-up"></i>
+                </div>
+            </div>
+            <div id="abrir" class="abrir">
+                <div class="tableAbrir">
+                    <h4>Abrir Chamados</h4>
+                    <div class="input">
+                        <div class="inputOne">
+                            <label>Setor:</label>
+                            <select name="" id="">
+                                <option value="">Selecione o setor</option>
+                            </select>
+                        </div>
+                        <div class="inputOne">
+                            <label >Assunto:</label>
+                            <select name="" id="">
+                                <option value="">Selecione o assunto</option>
+                            </select>
+                        </div>                        
+                    </div>
+                    <div class="btn">
+                            <button>Escolher arquivo</button>
+                            <span>Nenhum arquivo selecionado</span>
+                    </div>
+                    <div class="solicit">
+                        <label>Solicitação:</label>
+                        <textarea name="" placeholder="Escreva uma breve descrição do problema"></textarea>
+                        <button>Salvar</button>
+                    </div>
+                </div>
+            </div>
+            <div id="alterar" class="alterar">
+
+            </div>
+            <div id="ajuda" class="ajuda">
+
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

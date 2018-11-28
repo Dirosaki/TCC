@@ -1,0 +1,64 @@
+body{
+    overflow-y: auto;
+}
+
+section{
+    height: calc(100vh - 50px);
+    width: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fundoSobre.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section .contain{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+section h1{
+    font-size: 36px;
+    width: 90%;
+    text-align: center;
+    z-index: 0;
+    
+}
+
+section p {
+    text-align: justify;
+    font-size: 20px;
+    width: 90%;
+    z-index: 0;
+    text-indent: 2vw;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+@media screen and (max-width: 750px){
+    body{
+        overflow-y: auto;
+    }
+    
+    section{
+        height: calc(155vh - 50px);
+    }
+
+    section .contain{
+        width: 95%;
+    }
+    
+}
+

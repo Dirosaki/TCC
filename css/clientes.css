@@ -1,0 +1,162 @@
+
+section{
+    height: calc(100vh - 50px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fundoClientes.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section>h3{
+    color: white;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contain{
+    height: 82%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 5px;
+
+}
+
+.clients{
+    width: 28%;
+    height: 45%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.clients:nth-child(1){
+    background-image: url(../img/client1.png);
+}
+.clients:nth-child(2){
+    background-image: url(../img/client2.png);
+}
+.clients:nth-child(3){
+    background-image: url(../img/client3.png);
+    background-size: 45%;
+}
+.clients:nth-child(4){
+    background-image: url(../img/client4.png);
+}
+.clients:nth-child(5){
+    background-image: url(../img/client5.png);
+    background-size: 65%;
+}
+.clients:nth-child(6){
+    background-image: url(../img/client6.png); 
+    background-size: 75%;   
+}
+
+@media screen and (max-width: 750px){
+    body{
+        overflow-y: auto;
+    }
+    
+    section{
+        height: calc(120vh - 50px);
+    }
+
+    .contain{
+        width: 100%;
+    }
+    
+    .clients{
+        width: 46%;
+        height: 28%;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90%;
+    }
+
+    ::-webkit-scrollbar{
+        width: 0px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .clients:nth-child(3){
+        background-image: url(../img/client3.png);
+        background-size: 65%;
+    }
+    .clients:nth-child(4){
+        background-image: url(../img/client4.png);
+        background-size: 95%;
+    }
+    .clients:nth-child(5){
+        background-image: url(../img/client5.png);
+        background-size: 90%;
+    }
+    .clients:nth-child(6){
+        background-image: url(../img/client6.png); 
+        background-size: 90%;   
+    }
+
+    ::-webkit-scrollbar{
+        width: 0px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    section{
+        height: calc(215vh - 50px);
+    }
+
+    .contain{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+    
+    .clients{
+        width: 90%;
+        height: 15%;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90%;
+    }
+
+
+    .clients:nth-child(3){
+        background-image: url(../img/client3.png);
+        background-size: 55%;
+    }
+    .clients:nth-child(4){
+        background-image: url(../img/client4.png);
+        background-size: 85%
+    }
+    .clients:nth-child(5){
+        background-image: url(../img/client5.png);
+        background-size: 75%;
+    }
+    .clients:nth-child(6){
+        background-image: url(../img/client6.png); 
+        background-size: 85%;   
+    }
+
+    ::-webkit-scrollbar{
+        width: 0px;
+    }
+}
+
